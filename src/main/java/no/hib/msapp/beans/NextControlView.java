@@ -64,6 +64,7 @@ public class NextControlView {
 
             minWeeks = (new SettingsFacade()).getMaxWeeks();
             FacesContext.getCurrentInstance().getExternalContext().getRequestMap().put("Guid", survey.getUuid());
+            FacesContext.getCurrentInstance().getExternalContext().getApplicationMap().put("survey", survey);
         } else {
             noNextSurvey = true;
         }

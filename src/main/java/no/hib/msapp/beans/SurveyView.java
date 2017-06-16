@@ -11,6 +11,7 @@ import no.hib.msapp.entities.AppointmentPreperation;
 import no.hib.msapp.entities.OtherSubject;
 import no.hib.msapp.entities.Symptom;
 
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.Conversation;
 import javax.enterprise.context.ConversationScoped;
 import javax.faces.bean.ApplicationScoped;
@@ -37,13 +38,15 @@ public class SurveyView implements Serializable {
     private SurveyFacade surveyFacade;
     private final int MAX_STEPS = 8;
 
-    @Inject
-    private Conversation conversation;
-
     private List<String> selectedOthers;
     private List<SelectItem> othersSubjectsSelectItems;
 
     public SurveyView() {
+        init();
+    }
+
+    @PostConstruct
+    public void init() {
         String Guid = (String) FacesContext.getCurrentInstance().
                 getExternalContext().getRequestMap().get("Guid");
 
@@ -62,25 +65,25 @@ public class SurveyView implements Serializable {
         initSurvey();
     }
 
-    private AppointmentPreperation initSurvey(){
+    private AppointmentPreperation initSurvey() {
         // Fyller survey med default symptoms fra settings
         List<Symptom> symptoms = (new SymptomFacade()).findAll();
-        for(Symptom symptom : symptoms){
-            if(!survey.getSymptoms().contains(symptom)){
+        for (Symptom symptom : symptoms) {
+            if (!survey.getSymptoms().contains(symptom)) {
                 survey.addSymptom(symptom);
             }
         }
 
         //fyllet survey med default annet fra settings
         List<OtherSubject> subjects = (new OtherSubjectFacade()).findAll();
-        for(OtherSubject subject : subjects){
-            if(!survey.getOtherSubjects().contains(subject)){
+        for (OtherSubject subject : subjects) {
+            if (!survey.getOtherSubjects().contains(subject)) {
                 survey.addOtherSubject(subject);
             }
         }
 
         othersSubjectsSelectItems = new ArrayList<>();
-        for(OtherSubject otherSubject : survey.getOtherSubjects()){
+        for (OtherSubject otherSubject : survey.getOtherSubjects()) {
             SelectItem option = new SelectItem(otherSubject.getName(), otherSubject.getName());
             othersSubjectsSelectItems.add(option);
         }
@@ -119,28 +122,29 @@ public class SurveyView implements Serializable {
         setStep(getStep() - 1);
         System.out.println("Decrementing step");
         surveyFacade.saveSurvey(survey);
-        if(getStep() == 1){
+        if (getStep() == 1) {
             initSurvey();
         }
     }
 
-    public String confirmSurvey(){
+    public String confirmSurvey() {
         return "consultationHistory.xhtml";
     }
+
     /**
      * @return the step
      */
     public int getStep() {
         return step;
     }
-    
-    public void test(){
+
+    public void test() {
         System.out.println("Testing");
     }
 
     public String goToConfirmation() {
         survey.setOtherSubjects(new ArrayList<>());
-        for(String name : selectedOthers){
+        for (String name : selectedOthers) {
             OtherSubject other = new OtherSubject(name);
             survey.addOtherSubject(other);
         }
@@ -159,6 +163,17 @@ public class SurveyView implements Serializable {
      * @return the survey
      */
     public AppointmentPreperation getSurvey() {
+        String guid = (String) FacesContext.getCurrentInstance().
+                getExternalContext().getRequestMap().get("Guid");
+        if(guid == null){
+            guid = FacesContext.getCurrentInstance().
+                    getExternalContext().getRequestParameterMap().get("Guid");
+            if(guid == null) guid = survey.getUuid();
+            FacesContext.getCurrentInstance().getExternalContext().getRequestMap().put("Guid", guid);
+        }
+        if(!guid.equals(survey.getUuid())){
+            init();
+        }
         return survey;
     }
 
@@ -182,7 +197,7 @@ public class SurveyView implements Serializable {
         return "survey.xhtml";
     }
 
-    public String cancel(){
+    public String cancel() {
         initSurvey();
         return "survey.xhtml";
     }
