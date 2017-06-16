@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+
+        <ui:composition>
+
+
+            <p>BEHOV: </p> 
+            <p>#{survey.needForConsultation} </p>
+            <br/>
+
+            <p>SYMPTOMER (#{survey.symptomListUpdated}):</p>
+            <ul>
+                <ui:repeat var="symptom" value="#{survey.symptoms}">
+                    <li>#{symptom.name} (#{symptom.severity}, #{symptom.change}<h:outputText value=", Tas opp" rendered="#{symptom.important}"/>)</li>
+                </ui:repeat>
+            </ul>
+
+
+            <br/>
+
+            <p>BIVIRKNINGER (#{survey.sideEffectsUpdated}): </p>
+            <p>Nylig oppståtte (#{survey.newSideEffectsDegree})</p>
+            <p>Langvarige (#{survey.oldSideEffectsDegree})</p>
+            <p> <h:outputText value="Ønsker å ta opp bivirkninger på kontrollen." rendered="#{surveyView.survey.sideEffectsAreImportant}"/> </p>
+
+
+            <p>Beskrivelse av bivirkingene: #{survey.sideEffectsNote}</p>
+
+            <br/>
+            <br/>
+            <p>ANNET:</p>
+            <ul>
+                <ui:repeat var="other" value="#{survey.otherSubjects}">
+                    <li><h:outputText value="#{other}"/></li>
+                </ui:repeat>
+            </ul>
+
+            <p>Annet ønske: #{survey.otherSubjectsNote}</p>
+
+
+        </ui:composition>
+    </h:body>
+</html>
+

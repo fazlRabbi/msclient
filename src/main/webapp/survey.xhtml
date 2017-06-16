@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+    <h:head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Neste kontroll</title>
+        <link href="#{request.contextPath}/css/style.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body>
+        <ui:composition template="masterTemplate.xhtml">
+            <ui:define name="content">
+
+
+                <c:if test="#{surveyView.step eq 1}">
+                    <h:form class="center formClass">
+
+                        <div class="question"> Oversikt over symptomer:</div>
+
+                        <div style="text-align: center; margin: 0;">
+
+                            <div style="width: 100%; max-width: 500px; margin: 10px auto; ">
+                                <h:dataTable var="symptom" value="#{surveyView.survey.symptoms}"
+                                             styleClass="my-table"
+                                             headerClass="my-table-header"
+                                             rowClasses="my-table-odd-row,my-table-even-row">
+                                    <h:column>
+                                        <f:facet name="header"><h:outputText value="Symptom"/></f:facet>
+                                        <h:outputText value="#{symptom.name}"> </h:outputText>
+                                    </h:column>
+
+                                    <h:column>
+                                        <f:facet name="header"><h:outputText value="Svar"/></f:facet>
+
+
+                                        <h:commandButton action="#{surveyView.viewSymptom(symptom)}" id="submit_button"
+                                                         styleClass="btn btn-lg btn-primary btn-block" value="#{empty symptom.severity ? 'Ubesvart' : symptom.severity}" />
+
+                                    </h:column>
+
+                                </h:dataTable>
+
+                            </div>
+                        </div>
+
+                        <div id="footer"><ui:include src="footer.xhtml"/></div>
+
+                    </h:form>
+                </c:if>
+
+                <c:if test="#{surveyView.step eq 2}">
+                    <h:form class="center formClass">
+
+                        <div class="question"> Har du oppdatert symptomene slik at de stemmer med situasjonen den siste tiden?</div>
+
+                        <div style="text-align: left;">
+                            <div class="answers">
+
+                                <p:selectOneRadio value="#{surveyView.survey.symptomListUpdated}" layout="pageDirection"
+                                                  styleClass="choices">
+                                    <f:selectItem itemValue="Er oppdatert til å gjelde i dag" itemLabel="Ja"></f:selectItem>
+                                    <f:selectItem itemValue="Er delvis oppdatert til å gjelde i dag" itemLabel="Delvis"/>
+                                    <f:selectItem itemValue="Er ikke oppdatert  til å gjelde i dag"
+                                                  itemLabel="Nei, se bort fra symptomregistreringen"></f:selectItem>
+
+                                </p:selectOneRadio>
+
+
+                            </div>
+                        </div>
+
+                        <div id="footer"><ui:include src="footer.xhtml"/></div>
+                    </h:form>
+                </c:if>
+
+                <c:if test="#{surveyView.step eq 3}">
+                    <h:form class="center formClass">
+
+                        <div class="question">Har det nylig oppstått bivirkninger av din medisin?</div>
+
+                        <div style="text-align: left;">
+                            <div class="answers">
+
+                                <p:selectOneRadio value="#{surveyView.survey.newSideEffectsDegree}" layout="pageDirection"
+                                                  styleClass="choices">
+                                    <f:selectItem itemValue="Ingen" itemLabel="Nei, ingen bivirkninger"><br/>
+                                    </f:selectItem>
+                                    <f:selectItem itemValue="Sterkt plagsomme" itemLabel="Ja, sterkt plagsomme"/>
+                                    <f:selectItem itemValue="Moderate plager" itemLabel="Ja, moderate plager"/>
+                                    <f:selectItem itemValue="Svake plager" itemLabel="Ja, svake plager"></f:selectItem>
+
+                                </p:selectOneRadio>
+
+                            </div>
+                        </div>
+
+
+
+                        <div id="footer"><ui:include src="footer.xhtml"/></div>
+                    </h:form>
+                </c:if>
+
+
+                <c:if test="#{surveyView.step eq 4}">
+                    <h:form class="center formClass">
+
+
+                        <div class="question">Har du hatt bivirkninger av din medisin over lengre tid?</div>
+                        <div style="text-align: left;">
+                            <div class="answers">
+                                <p:selectOneRadio value="#{surveyView.survey.oldSideEffectsDegree}" layout="pageDirection"
+                                                  styleClass="choices">
+                                    <f:selectItem itemValue="Ingen" itemLabel="Nei, ingen bivirkninger"><br/>
+                                    </f:selectItem>
+                                    <f:selectItem itemValue="Sterkt plagsomme" itemLabel="Ja, sterkt plagsomme"/>
+                                    <f:selectItem itemValue="Moderate plager" itemLabel="Ja, moderate plager"/>
+                                    <f:selectItem itemValue="Svake plager" itemLabel="Ja, svake plager"></f:selectItem>
+
+                                </p:selectOneRadio>
+
+                            </div>
+                        </div>
+
+                        <div id="footer"><ui:include src="footer.xhtml"/></div>
+                    </h:form>
+                </c:if>
+
+                <c:if test="#{surveyView.step eq 5}">
+                    <h:form class="center formClass">
+                        <div class="question">Hvis du ønsker kan du under gi en kort beskrivelse av bivirkningene du har:</div>
+                        <div class="answers">(Max 500 tegn)</div>
+                        <h:inputTextarea value="#{surveyView.survey.sideEffectsNote}" rows="4" styleClass="textBox" a:maxlength="500"/>
+                        <br/> <br/>
+
+                        <div class="question"><p:selectBooleanCheckbox value="#{surveyView.survey.sideEffectsAreImportant}"/>
+                            Bivirkninger er viktig tema for neste kontroll
+                        </div>
+
+                        <div style="text-align: left;">
+                            <div class="answers">
+
+                            </div>
+                        </div>
+
+                        <div id="footer"><ui:include src="footer.xhtml"/></div>
+                    </h:form>
+                </c:if>
+
+                <c:if test="#{surveyView.step eq 6}">
+                    <h:form class="center formClass">
+
+                        <div class="question"> Har du oppdatert bivirkningene slik at de stemmer med situasjonen den siste tiden?</div>
+
+                        <div style="text-align: left;">
+                            <div class="answers">
+
+                                <p:selectOneRadio value="#{surveyView.survey.sideEffectsUpdated}" layout="pageDirection"
+                                                  styleClass="choices">
+                                    <f:selectItem itemValue="Er oppdatert til å gjelde i dag" itemLabel="Ja"><br/>
+                                    </f:selectItem>
+                                    <f:selectItem itemValue="Er delvis oppdatert til å gjelde i dag" itemLabel="Delvis"/>
+                                    <f:selectItem itemValue="Er ikke oppdatert til å gjelde i dag"
+                                                  itemLabel="Nei, se bort fra bivirkningsopplysningene"></f:selectItem>
+
+                                </p:selectOneRadio>
+
+                            </div>
+                        </div>
+                        <div id="footer"><ui:include src="footer.xhtml"/></div>
+                    </h:form>
+                </c:if>
+
+                <c:if test="#{surveyView.step eq 7}">
+                    <h:form class="center">
+
+                        <div class="question"> Føler du behov for å gjennomføre kontrollen?</div>
+
+                        <div style="text-align: left;">
+                            <div class="answers">
+
+                                <p:selectOneRadio id="foo" value="#{surveyView.survey.needForConsultation}"
+                                                  layout="pageDirection" styleClass="choices">
+                                    <f:selectItem itemValue="Du har behov for å gjennomføre kontrollen" itemLabel="Ja"><br/>
+                                    </f:selectItem>
+                                    <f:selectItem itemValue="Du har ikke behov for å gjennomføre kontrollen"
+                                                  itemLabel="Nei"/>
+                                    <f:selectItem itemValue="Du er usikker på om du har behov for å gjennomføre kontrollen"
+                                                  itemLabel="Er i tvil"/>
+                                </p:selectOneRadio>
+
+
+                            </div>
+                        </div>
+
+                        <div id="footer"><ui:include src="footer.xhtml"/></div>
+                    </h:form>
+                </c:if>
+
+                <c:if test="#{surveyView.step ge 8}">
+                    <h:form class="center formClass">
+
+                        <div class="question">Er det andre tema du ønsker å ta opp på kontrollen?</div>
+
+                        <div style="text-align: left;">
+                            <div class="answers">
+                                <h:selectManyCheckbox value="#{surveyView.selectedOthers}" layout="pageDirection"
+                                                      styleClass="choices">
+                                    <f:selectItems value="#{surveyView.othersSubjectsSelectItems}" />
+                                </h:selectManyCheckbox>
+                                <br/>
+                                <div class="question">Annet</div><div class="answers">(Max 500 tegn)</div>
+                                <h:inputTextarea value="#{surveyView.survey.otherSubjectsNote}" rows="4"
+                                                 styleClass="textBox"  a:maxlength="500"/>
+
+                            </div>
+                        </div>
+                        <div id="footer"><ui:include src="footer.xhtml"/></div>
+                    </h:form>
+                </c:if>
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>

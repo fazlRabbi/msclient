@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<f:view>
+
+    <h:head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="#{request.contextPath}/css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script
+                src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <title>Neste kontroll</title>
+
+    </h:head>
+    <h:body>
+        <ui:include src="./navbar.xhtml">
+            <ui:param name="activeView" value="nextConsultation"/>
+        </ui:include>
+
+        <div class='center'>
+            <h:panelGroup layout="block" styleClass="center" rendered="#{nextControlView.stage eq 'informAboutSurvey'}">
+                <fieldset style="width:500px; display:inline-block;">
+
+                    <legend> #{nextControlView.currentDate}</legend>
+                    <div style="width:500px; display:inline-block; background-color:#D3ECEC">
+                        <br/>
+                        <br/>
+                        <div class="infoBox">
+                            Din neste kontroll er planlagt til #{nextControlView.meetingDate}
+                            Du vil motta forespørsel via denne appen ca #{nextControlView.minWeeks} uke(r) før planlagt kontroll.
+                            Da vil du ha mulighet til å melde inn viktige tema som må tas opp på neste kontroll.
+                            I tillegg vurderes det om kommende kontroll skal utsettes eller ikke. Hvis din sykdom er i en stabil fase uten mye plager kan det,
+                            etter ønske fra deg og medisinsk vurdering fra nevrologisk avdeling, være hensiktsmessig å utsette kontrollen i ca 6 mnd.
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                    </div>
+                </fieldset>
+            </h:panelGroup>
+
+            <h:panelGroup layout="block" rendered="#{nextControlView.stage eq 'displaySurveyOption'}">
+                <h2 style='margin: 50px;'> Din neste kontroll er planlagt til #{nextControlView.meetingDate} </h2>
+
+
+                <h:outputLink class="btn btn-warning btn-circle" value="survey.xhtml?Guid=#{nextControlView.uuid}">
+                    <span class="glyphicon glyphicon-arrow-right"></span>
+                </h:outputLink>
+                <h2 class='text-warning'>Start forberedelsen til neste kontroll </h2>
+
+
+                Svarfrist #{nextControlView.answerDate} (Uten svar møter du til denne kontrollen som vanlig)
+            </h:panelGroup>
+
+            <h:panelGroup layout="block" rendered="#{nextControlView.stage eq 'dateExpired'}">
+
+                Din neste kontroll er planlagt til #{nextControlView.meetingDate}
+                <br/>
+                Det er nå forsent å delta i spørreundersøkelsen.
+            </h:panelGroup>
+
+            <h:panelGroup layout="block" rendered="#{nextControlView.stage eq 'noNextSurvey'}">
+                Du har ingen fremtidige kontroller.
+            </h:panelGroup>
+
+
+        </div>
+    </h:body>
+</f:view>
+</html>

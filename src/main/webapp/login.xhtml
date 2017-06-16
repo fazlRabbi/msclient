@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+
+<f:view>
+
+    <h:head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+
+        <link href="#{request.contextPath}/css/style.css" rel="stylesheet" type="text/css"/>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="application/javascript"></script>
+        <script
+                src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+                type="application/javascript"></script>
+        <title>Login</title>
+    </h:head>
+    <h:body>
+        <div class="container">
+
+
+            <h:form class="form-signin" id="submitForm">
+                <h4 class="form-signin-heading">Vennligst oppgi personnummer og
+                    passord</h4>
+
+
+                <label for="fnr">Personnummer: </label>
+                <h:inputText class="form-control" id="fnr"
+                             value="#{loginView.ssn}" required="true"
+                             a:placeholder="Personnummer:"/>
+
+
+                <br/>
+
+
+                <label for="password">Passord: </label>
+                <h:inputSecret class="form-control" a:placeholder="Passord:"
+                               value="#{loginView.password}" id="password"
+                               required="true"/>
+
+                <br/>
+                <h:message for="submitForm" style="color:red"/>
+                <h:commandButton class="btn btn-lg btn-primary btn-block"
+                                 id="submit_button" value="Login"
+                                 action="#{loginView.login()}"/>
+            </h:form>
+        </div>
+    </h:body>
+</f:view>
+</html>

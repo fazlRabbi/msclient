@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="#{request.contextPath}/css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <title>Facelet Title</title>
+
+    </h:head>
+    <h:body>
+        <ui:composition template="masterTemplate.xhtml">
+            <ui:define name="content">
+                <div style="text-align: center;">
+                    <div class="summary">
+                        <p> Gjelder for kontroll #{surveyView.survey.formattedTime}</p>
+
+                        <ui:include src="summaryTemplate.xhtml">
+                            <ui:param name="survey" value="#{surveyView.survey}" />
+                        </ui:include>
+
+                        <h:form><h:commandButton value="Tilbake" action="survey.xhtml" class="btn" style="float:left; margin-left:10px;" type="submit"/></h:form>
+
+                        <h:form><h:commandButton value="Fullfør" action="approval.xhtml" class="btn btn-success" style="float:right; margin-right:10px;" type="submit"/></h:form>
+                    </div>
+                </div>                    
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+

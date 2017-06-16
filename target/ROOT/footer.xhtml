@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+<h:head>
+    <title>Facelet Title</title>
+
+    <link href="#{request.contextPath}/css/style.css" rel="stylesheet" type="text/css"/>
+</h:head>
+<h:body>
+    <ui:composition>
+
+        <c:if test="#{surveyView.step gt 1}">
+            <h:commandLink id="backButton" action="#{surveyView.decrementStep()}" class="left">&#8592;Tilbake</h:commandLink>
+        </c:if>
+
+        <c:if test="#{surveyView.step lt surveyView.MAX_STEPS}">
+            <h:commandLink  id="nextButton" action="#{surveyView.incrementStep()}" class="right">Neste&#8594;</h:commandLink>
+        </c:if>
+
+        <c:if test="#{surveyView.step ge surveyView.MAX_STEPS}">
+            <h:commandLink action="#{surveyView.goToConfirmation()}" class="right">Til oppsummering</h:commandLink>
+        </c:if>
+
+        <br></br>
+        <br/>
+        <script type="javascript">
+            document.getElementById('j_idt32:backButton').onclick = function() {
+                alert("button was clicked");
+            }​;​
+            document.getElementById('j_idt32:nextButton').onclick = function() {
+                alert("button was clicked");
+            }​;​
+        </script>
+    </ui:composition>
+</h:body>
+</html>
+

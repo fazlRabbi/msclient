@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <f:view>
+
+        <h:head>
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link href="#{request.contextPath}/css/style.css" rel="stylesheet" type="text/css"/>
+            <link rel="stylesheet"
+                  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+            <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+            <title>Kontroller</title>
+        </h:head>
+        <h:body>
+
+            <ui:include src="./navbar.xhtml">
+                <ui:param name="activeView" value="consultationHistory" />
+
+            </ui:include>
+    
+           <div style="text-align: center;">
+                        
+                        <div class="history"> 
+            <h:form>
+                  <h2> Tidligere konsultasjoner </h2>
+                <h:dataTable  var="survey" value="#{surveyListView.oldConsultations}" 
+                                          styleClass="my-table"
+                                          headerClass="my-table-header"
+                                          rowClasses="my-table-odd-row,my-table-even-row">
+                                <h:column>    				
+                                    				
+                                    <h:outputText value="#{survey.getFormattedTime('dd.MM.yyyy')}" > </h:outputText>
+                                </h:column>
+                    
+                             <h:column>    				
+                                   				
+                                    <h:commandLink action="#{surveyListView.viewSurvey(survey)}" class="btn btn-info btn-circle-small"  type="submit">
+                                        <span class="glyphicon glyphicon-arrow-right"></span>
+                                    </h:commandLink>
+                                </h:column>
+
+                            </h:dataTable>
+                
+                <h2> Aktive konsultasjoner </h2>
+                  <h:dataTable  var="survey" value="#{surveyListView.activeConsultations}" 
+                                          styleClass="my-table"
+                                          headerClass="my-table-header"
+                                          rowClasses="my-table-odd-row,my-table-even-row">
+                                <h:column>    				
+                                     				
+                                    <h:outputText value="#{survey.getFormattedTime('dd.MM.yyyy')}" style="color:red;" > </h:outputText>
+                                </h:column>
+                    
+                             <h:column>    				   				
+                                    <h:commandLink action="#{surveyListView.goToConsultation(survey)}" class="btn btn-info btn-circle-small"  type="submit">
+                                        <span class="glyphicon glyphicon-arrow-right"></span>
+                                    </h:commandLink>
+                                </h:column>
+
+                            </h:dataTable>
+                
+            
+                
+
+            </h:form>
+                            
+                        </div></div>
+            
+        </h:body>
+    </f:view>
+</html>

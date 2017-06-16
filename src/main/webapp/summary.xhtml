@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+    <link href="#{request.contextPath}/css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"></link>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>Facelet Title</title>
+</h:head>
+<h:body>
+
+    <ui:include src="navbar.xhtml">
+        <ui:param name="activeView" value="consultationHistory"/>
+
+    </ui:include>
+
+    <div style="text-align: center;">
+        <div class="summary">
+
+
+            <div style="text-align:right; margin: 10px;">
+                <h:form><h:commandLink action="#{summaryView.goBack()}" style="color:black; display:inline-block"
+                                       type="submit">
+                    <i class='fa fa-share fa-flip-horizontal '></i>
+                    <p>Ferdig</p>
+                </h:commandLink></h:form>
+
+
+            </div>
+
+            <h2> Kontroll:  #{summaryView.survey.formattedTime}</h2>
+            <br/>
+            <ui:include src="summaryTemplate.xhtml">
+                <ui:param name="survey" value="#{summaryView.survey}"/>
+            </ui:include>
+
+
+        </div>
+    </div>
+
+</h:body>
+</html>
+

@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="#{request.contextPath}/css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"></link>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <title>Facelet Title</title>
+
+</h:head>
+<h:body>
+
+    <h:form class="answers">
+        <fieldset style="display: inline-block;">
+            <legend>#{symptomView.symptom.name}</legend>
+
+
+            <h:outputText value="#{symptomView.symptom.description}"></h:outputText>
+            <br/>
+            <br/>
+            <div class="question"> Alvorlighet av symptomet (Nå i det siste):</div>
+
+            <div style="text-align: left;">
+                <div class="answers">
+
+                    <p:selectOneRadio value="#{symptomView.symptom.severity}" layout="pageDirection" required="true"
+                                      requiredMessage="Du må velge en">
+                        <f:selectItem itemValue="Sterke plager"
+                                      itemLabel="Mye ubehag/påvirker hverdagen i stor grad"></f:selectItem>
+                        <f:selectItem itemValue="Moderate plager" itemLabel="Plagsom/Påvirker hverdagen"/>
+                        <f:selectItem itemValue="Plages ikke" itemLabel="Plages ikke"/>
+                        <f:selectItem itemValue="Ikke aktuell lenger" itemLabel="Ikke aktuell lenger"/>
+                    </p:selectOneRadio>
+                </div>
+            </div>
+
+
+            <br/>
+            <div class="question"> Endring siden forrige kontroll:</div>
+
+            <div style="text-align: left;">
+                <div class="answers">
+
+                    <p:selectOneRadio value="#{symptomView.symptom.change}" layout="pageDirection"
+                                      style="vertical-align: middle; margin: 0px;" required="true"
+                                      requiredMessage="Du må velge en">
+                        <f:selectItem itemValue="Forværret" itemLabel="Er blitt værre i det siste"></f:selectItem>
+                        <f:selectItem itemValue="Uforandret" itemLabel="Er uforandret"/>
+                        <f:selectItem itemValue="Blitt bedre" itemLabel="Er blitt bedre"/>
+
+
+                    </p:selectOneRadio>
+                    <br/>
+                    <div style="width:100%;">
+
+                        <div style="float:right; width: 95%; margin-bottom:5px;"> Viktig tema for neste kontroll
+                            <div style="display:inline-block; float:right;">
+
+                                <h:commandButton value="Avbryt" action="#{surveyView.cancel()}" immediate="true" />
+                                <h:commandLink action="#{surveyView.saveSymptom()}"
+                                               style="color:black; display:inline-block" type="submit">
+                                    Ferdig <i class='fa fa-share fa-flip-horizontal '></i>
+
+                                </h:commandLink>
+                            </div>
+
+                        </div>
+                        <div style="width:5%;"><p:selectBooleanCheckbox value="#{symptomView.symptom.important}"/>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </fieldset>
+    </h:form>
+</h:body>
+</html>
+

@@ -1,0 +1,289 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23.jun.2016, 13:49:43
+    Author     : Leif Arne
+*/
+
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+#header {
+	background:white;
+	
+}
+
+#appHeader {
+    
+}
+#content {
+	padding-bottom:50px; /* Height of the footer element */
+}
+#footer {
+	background:whitesmoke;
+	width:100%;
+	position:fixed;
+	height:50px;
+        left:0;
+        bottom:0;
+}
+.left {
+    float:left;
+    padding:20px;
+    position:relative;
+    
+}
+
+.error {
+    color:red;
+}
+
+.right {
+    float:right;
+    padding:20px;
+    position:relative;
+    
+}
+
+
+.btn-circle {
+  border-radius: 50% !important;
+    margin: 1px !important;
+    width:1.8em;
+    font-size: 80px !important;
+
+}
+.btn-circle-small {
+  border-radius: 50% !important;
+    margin: 1px auto !important;
+    width:1.8em !important;
+    font-size: 10px !important;
+    
+
+}
+
+.infoBox{
+    background-color:#93C5C6;
+    width:400px;
+    height:200px;
+    text-align:left;
+    
+    margin: 1px auto;
+    
+    border-width: 2px;
+    border-color:cadetblue;
+}
+
+.center {
+    text-align:center;
+}
+
+.container {
+  width: 600px;
+  margin: 30px auto; 
+}
+.progressbar {
+  margin: 0;
+  padding: 0;
+  counter-reset: step;
+}
+.progressbar li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7d7d7d;
+}
+.progressbar li:before {
+  width: 30px;
+  height: 30px;
+  content: counter(step);
+  counter-increment: step;
+  line-height: 30px;
+  border: 2px solid #7d7d7d;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: white;
+}
+.progressbar li:after {
+  width: 100%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  background-color: #7d7d7d;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: green;
+}
+.progressbar li.active:before {
+  border-color: #55b776;
+}
+.progressbar li.active + li:after {
+  background-color: #55b776;
+}
+
+
+.myRad td label{
+    vertical-align: middle; margin: 0px;
+}
+
+.myRad td input + label {
+   text-align:center;
+   align-content:center;
+
+
+}.my-table{   
+	border-collapse:collapse;
+        width: 70%;
+       margin-left: auto;
+       margin-right: auto;
+}
+
+.my-table-header{
+	text-align:center;
+	background:none repeat scroll 0 0 #E5E5E5;
+	border-bottom:1px solid #BBBBBB;
+	padding:10px;
+}
+
+.my-table-odd-row{
+	text-align:center;
+	background:none repeat scroll 0 0 #FFFFFF;
+	border-top:1px solid #BBBBBB;
+}
+
+.my-table-even-row{
+	text-align:center;
+	background:none repeat scroll 0 0 #F9F9F9;
+	border-top:1px solid #BBBBBB;
+}
+.history {
+    width: 800px;
+    margin: 20px auto;
+}
+
+
+.choices td {
+    font-size: 20px;
+}
+
+.question {
+    color:blue;
+    font-size: 23px;
+    width: 100%;
+}
+
+.answers {
+    width: 500px;  
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.answers table tbody td {
+    padding-right:10px;
+} 
+
+.textBox {
+    width:470px;
+}
+
+.summary {
+    width: 800px; 
+    margin: 0 auto; 
+    display: inline-block; 
+    text-align: left;
+    font-size: 25px;
+   
+}
+
+@media screen and (max-width: 800px){
+    .summary {
+        width: 500px;
+        font-size:medium;
+    }
+    .container {
+  width: 500px;
+  margin: 10px auto;
+}
+
+.center h2 {
+    font-size:16px;
+}
+.history {
+    width: 500px;
+    margin: 10px auto;
+}
+
+.question {
+    font-size: 16px;
+}
+
+.choices td {
+    font-size: 14px;
+}
+    
+}
+
+
+@media screen and (max-width: 500px){
+    .container {
+  width: 300px;
+}
+.history {
+    width: 300px;
+    margin: 5px auto;
+}
+
+.progressbar li {
+  font-size: 9px;
+}
+
+.center h2 {
+    font-size:14px;
+}
+
+.question {
+    font-size: 14px;
+}
+
+.choices td {
+    font-size: 13px;
+}
+
+.answers {
+    width:300px;
+}
+.textBox {
+    width:300px;
+}
+
+.summary {
+    width:320px;
+    font-size: x-small;
+}
+.infoBox{
+    width:300px;
+}
+
+}

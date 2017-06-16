@@ -1,0 +1,9 @@
+applications:
+- path: target/TomcatHelloWorldApp.war
+  memory: 1024M
+  instances: 1
+  domain: medicloud.eu-gb.mybluemix.net
+  name: msclient
+  host: msclient
+  disk_quota: 1024M
+  buildpack: java_buildpack

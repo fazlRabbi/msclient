@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="#{request.contextPath}/css/style.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <title>Facelet Title</title>
+
+    </h:head>
+    <h:body>
+        <ui:composition template="masterTemplate.xhtml">
+            <ui:define name="content">
+                <div style="text-align: center;">
+                    <div class="summary">
+                        <div class="question">INNSENDING:</div>
+
+                        <br/>
+                        <div style="color:red;" > 
+                            <p>Oppsummering av dine svar vil nå bli sendt til din nevrologiske avdeling hvor den blir brukt til å
+                                forberede kommende kontroll. </p>
+
+                            <p> 
+                                Hvis du har sagt du ikke føler behov for kontrollen vil medisinsk personell vurdere om kontrollen kan utsettes.
+                                Du får eventuelt beskjed om dette innen 5 virkedager.
+                            </p>
+                        </div>
+                        <br/>
+                        <h:form><h:commandButton value="Godta" action="#{surveyView.confirmSurvey()}" class="btn btn-warning" style="float:left; margin-left:25%; width:20%; color:black; border-color:black; " type="submit"/></h:form>
+                        <h:form><h:commandButton value="Avbryt" action="confirmation.xhtml" style="float:right; width:20%; margin-right:25%; border-color:black;" class="btn btn-danger" type="submit"/></h:form>
+
+
+                    </div>
+                </div>                    
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+

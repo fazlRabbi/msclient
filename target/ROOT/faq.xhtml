@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+
+<f:view>
+
+    <h:head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="application/javascript"></script>
+        <script
+                src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+                type="application/javascript"></script>
+
+        <title>FAQ</title>
+    </h:head>
+    <h:body>
+        <ui:include src="./navbar.xhtml">
+            <ui:param name="activeView" value="myPage"/>
+        </ui:include>
+        <div class="container">
+            <h3>Ofte stilte spørsmål</h3>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Hvordan kan jeg melde inn eventuelle forbedringer, problemer eller generelle tilbakemeldinger?</h3>
+                </div>
+                <div class="panel-body">
+                    På høyre side av skjermen vil du se et blått ikon hvor det står "Feedback". Trykk på denne og du får muligheten til å markere hvilken del av nettsiden du ønsker å kommentere dersom
+                    du ønsker det og bruke en penn for mer detaljer om ønskelig. Dersom du har en kommentar du ønsker tilbakemelding på så erstatt gjerne 'test@email.com' med din egen email-adresse.
+                    På mobil vil dette være et mindre ikon, og den vil automatisk ta bilde av siden du er på.
+                </div>
+            </div>
+        </div>
+    </h:body>
+</f:view>
+</html>
