@@ -1,38 +1,26 @@
-TomcatHelloWorldApp Sample
+Application for multiple sclerosis
 ==============
 
-This project contains a simple Servlet application.
+## How to build and run project locally
+You need an IDE, Tomcat and Maven installed.
 
-## Building with Maven
+Open the project in your favorite IDE (IntelliJ is recommended).
 
-This project can be built with [Apache Maven](http://maven.apache.org/). Use the following steps to run the application with Maven:
+Run Maven command "install" to update and generate the .war file.
 
-1. Execute full Maven build:
-    ```bash
-    $ mvn clean install
-    ```
+Setup the Tomcat server and run the application as a Tomcat application.
 
-2. To push the application to Bluemix using the cf command line tool:
-    ```bash
-    $ cf push <appname> -p target/TomcatHelloWorldApp.war
-    ```
+The MS-application should now be available on localhost:8080.
 
-# Notice
+## MediCloud
+The settings for running the application is found in the "manifest.yml" file. Here you can specify the path for the .war file, memory, instances and the URL for the application.
 
-© Copyright IBM Corporation 2016.
+You need an IBM Bluemix user and the correct rights to access the MediCloud. 
 
-# License
+To update the application on MediCloud you need to install CLI (https://console.bluemix.net/docs/starters/install_cli.html). 
+After this is installed you need to use a terminal to navigate to the project folder where "manifest.yml" is located.
 
-```text
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Run "cf push" to update the application on MediCloud. "cf push" will use your "manifest.yml" file to update the project. 
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-````
+## Other cloud solutions
+Since the application is a Tomcat application you can deploy the application on other cloud solutions aswell. Follow the instructions given by the cloud solution vendor that you want to use. 
