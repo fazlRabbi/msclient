@@ -143,7 +143,7 @@ public class SurveyView implements Serializable {
     }
 
     public String goToConfirmation() {
-        survey.setOtherSubjects(new ArrayList<>());
+        survey.setOtherSubjects(new ArrayList<OtherSubject>());
         for (String name : selectedOthers) {
             OtherSubject other = new OtherSubject(name);
             survey.addOtherSubject(other);

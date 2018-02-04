@@ -23,7 +23,7 @@ import java.util.List;
  * @author Leif Arne
  */
 public class SymptomFacade {
-    private final String ALL_SYMPTOMS = "http://ms-services.medicloud.eu-gb.mybluemix.net/api/settings/symptoms";
+    private final String ALL_SYMPTOMS = "http://msservices.eu-gb.mybluemix.net/api/settings/symptoms";
 
     public SymptomFacade() {
     }

@@ -25,7 +25,7 @@ import java.util.List;
  */
 public class SurveyFacade {
 
-    private final String ALL_SURVEYS = "http://ms-services.medicloud.eu-gb.mybluemix.net/api/preperation";
+    private final String ALL_SURVEYS = "http://msservices.eu-gb.mybluemix.net/api/preperation";
     private String ssn;
 
     public SurveyFacade(String Ssn) {

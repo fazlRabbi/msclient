@@ -12,7 +12,7 @@ import java.net.URL;
 import java.util.List;
 
 public class OtherSubjectFacade {
-    private final String ALL_SUBJECTS = "http://ms-services.medicloud.eu-gb.mybluemix.net/api/settings/othersubjects";
+    private final String ALL_SUBJECTS = "http://msservices.eu-gb.mybluemix.net/api/settings/othersubjects";
 
     public OtherSubjectFacade() {
     }

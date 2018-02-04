@@ -20,7 +20,7 @@ import java.net.URL;
  */
 public class PatientFacade {
 
-    private final String ALL_PATIENTS = "http://ms-services.medicloud.eu-gb.mybluemix.net/api/patients";
+    private final String ALL_PATIENTS = "http://msservices.eu-gb.mybluemix.net/api/patients";
 
     public PatientFacade() {
     }

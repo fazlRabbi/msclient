@@ -22,7 +22,7 @@ import java.net.URL;
  */
 public class AppointmentFacade {
 
-    private final String ALL_SURVEYS = "http://ms-services.medicloud.eu-gb.mybluemix.net/api/preperation";
+    private final String ALL_SURVEYS = "http://msservices.eu-gb.mybluemix.net/api/preperation";
 
     public AppointmentFacade(Patient p) {
     }

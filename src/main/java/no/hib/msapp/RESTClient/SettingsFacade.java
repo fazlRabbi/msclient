@@ -20,7 +20,7 @@ import java.net.URL;
  * @author Leif Arne
  */
 public class SettingsFacade {
-    private final String MAX_WEEKS = "http://ms-services.medicloud.eu-gb.mybluemix.net/api/settings/preperationStart";
+    private final String MAX_WEEKS = "http://msservices.eu-gb.mybluemix.net/api/settings/preperationStart";
 
     public SettingsFacade() {
     }
