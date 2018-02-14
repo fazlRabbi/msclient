@@ -2,64 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dcf8c206-0b86-43ec-9d7a-933f7804670a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ROOT/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT.war" afterPath="$PROJECT_DIR$/target/ROOT.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/AppointmentFacade.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/AppointmentFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/LoginFacade.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/LoginFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/OtherSubjectFacade.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/OtherSubjectFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/PatientFacade.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/PatientFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/SettingsFacade.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/SettingsFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/SurveyFacade.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/SurveyFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/SymptomFacade.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/RESTClient/SymptomFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/beans/LoginFilter.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/beans/LoginFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/beans/LoginView.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/beans/LoginView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/beans/NextControlView.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/beans/NextControlView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/beans/SurveyListView.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/beans/SurveyListView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/beans/SurveyView.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/beans/SurveyView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/entities/OtherSubject.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/entities/OtherSubject.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/entities/Symptom.class" afterPath="$PROJECT_DIR$/target/ROOT/WEB-INF/classes/no/hib/msapp/entities/Symptom.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/AppointmentFacade.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/AppointmentFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/LoginFacade.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/LoginFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/OtherSubjectFacade$1.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/OtherSubjectFacade$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/OtherSubjectFacade.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/OtherSubjectFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/PatientFacade.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/PatientFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/SettingsFacade$1.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/SettingsFacade$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/SettingsFacade.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/SettingsFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/SurveyFacade$1.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/SurveyFacade$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/SurveyFacade.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/SurveyFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/SymptomFacade$1.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/SymptomFacade$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/SymptomFacade.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/SymptomFacade.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/UtfConverter.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/RESTClient/UtfConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/LoginFilter.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/LoginFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/LoginView.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/LoginView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/NextControlView.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/NextControlView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/OtherSubjectConverter.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/OtherSubjectConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/SummaryView.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/SummaryView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/SurveyListView.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/SurveyListView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/SurveyView.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/SurveyView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/SymptomView.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/beans/SymptomView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/Appointment.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/Appointment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/AppointmentPreperation.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/AppointmentPreperation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/BankIdUser.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/BankIdUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/Doctor.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/Doctor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/OtherSubject.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/OtherSubject.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/Patient.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/Patient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/Symptom.class" afterPath="$PROJECT_DIR$/target/classes/no/hib/msapp/entities/Symptom.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/TomcatHelloWorldApp_war.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/TomcatHelloWorldApp_war_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/azureSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TomcatHelloWorldApp.iml" afterPath="$PROJECT_DIR$/TomcatHelloWorldApp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manifest.yml" afterPath="$PROJECT_DIR$/manifest.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/AppointmentFacade.java" afterPath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/AppointmentFacade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/LoginFacade.java" afterPath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/LoginFacade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/OtherSubjectFacade.java" afterPath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/OtherSubjectFacade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/PatientFacade.java" afterPath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/PatientFacade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SettingsFacade.java" afterPath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SettingsFacade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SurveyFacade.java" afterPath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SurveyFacade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SymptomFacade.java" afterPath="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SymptomFacade.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/SurveyView.java" afterPath="$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/SurveyView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="TomcatHelloWorldApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,52 +33,102 @@
     <favorites_list name="TomcatHelloWorldApp" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Appointment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/entities/Appointment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-109">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginFacade.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/LoginFacade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OtherSubjectFacade.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/OtherSubjectFacade.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
-              <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingsFacade.java" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SettingsFacade.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SettingsFacade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+            <state relative-caret-position="-70">
+              <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SymptomFacade.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SymptomFacade.java">
+      <file leaf-file-name="AppointmentFacade.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/AppointmentFacade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="165">
+              <caret line="96" column="27" lean-forward="false" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NextControlView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/NextControlView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="463">
+              <caret line="65" column="113" lean-forward="false" selection-start-line="65" selection-start-column="113" selection-end-line="65" selection-end-column="113" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OtherSubjectConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/OtherSubjectConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-91">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SurveyView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/SurveyView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-901">
+              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SummaryView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/SummaryView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-136">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SurveyListView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/SurveyListView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="52" column="47" lean-forward="true" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SurveyFacade.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SurveyFacade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1268">
+              <caret line="119" column="32" lean-forward="false" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/LoginFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-177">
+              <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/LoginView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-19">
+              <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -142,36 +145,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getre</find>
-      <find>getreq</find>
-      <find>g</find>
-      <find>get</find>
-      <find>get(</find>
-      <find>get(&quot;</find>
-      <find>get(&quot;s</find>
-      <find>get(&quot;sy</find>
-      <find>get(&quot;sym</find>
-      <find>get(&quot;symp</find>
-      <find>get(&quot;sympt</find>
-      <find>get(&quot;symptom</find>
-      <find>ms-servicesmedicloud</find>
-      <find>ms-services.medicloud</find>
-      <find>medicloud</find>
-      <find>10111213141</find>
-      <find>C</find>
-      <find>Consul</find>
-      <find>Consultation</find>
-      <find>ConsultationAP</find>
-      <find>ConsultationAPI</find>
-      <find>pa</find>
-      <find>passwo</find>
-      <find>passwor</find>
-      <find>password</find>
-      <find>da</find>
       <find>databa</find>
       <find>databas</find>
-      <find>d</find>
       <find>database</find>
+      <find>fa</find>
+      <find>fasade</find>
+      <find>fasadeS</find>
+      <find>fasadeSe</find>
+      <find>fasadeSer</find>
+      <find>fasadeServcic</find>
+      <find>fasadeServci</find>
+      <find>fasadeServc</find>
+      <find>fasadeServ</find>
+      <find>fasadeService</find>
+      <find>l</find>
+      <find>loginfilter</find>
+      <find>d</find>
+      <find>doFilter</find>
+      <find>e</find>
+      <find>encon</find>
+      <find>encod</find>
+      <find>encoding</find>
+      <find>encodingf</find>
+      <find>encodingfil</find>
+      <find>encodingfilte</find>
+      <find>encodingfilter</find>
+      <find>fatigue</find>
+      <find>s</find>
+      <find>symp</find>
+      <find>symptom</find>
+      <find>datasource</find>
     </findStrings>
     <replaceStrings>
       <replace>msservices</replace>
@@ -246,8 +249,8 @@
         <option value="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/LoginFacade.java" />
         <option value="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/OtherSubjectFacade.java" />
         <option value="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SurveyFacade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SymptomFacade.java" />
         <option value="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/PatientFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SymptomFacade.java" />
       </list>
     </option>
   </component>
@@ -302,7 +305,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="732" />
+    <option name="height" value="711" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -356,14 +359,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MSClient" />
+              <option name="myItemId" value="msclient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -373,7 +373,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MSClient" />
+              <option name="myItemId" value="msclient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -391,7 +391,55 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MSClient" />
+              <option name="myItemId" value="msclient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msclient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msclient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msclient" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="msclient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -421,7 +469,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MSClient" />
+              <option name="myItemId" value="msclient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -451,7 +499,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MSClient" />
+              <option name="myItemId" value="msclient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -481,6 +529,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -881,8 +932,7 @@
     <option name="totallyTimeSpent" value="57465000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="732" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="711" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -892,13 +942,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1046875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3372093" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3364486" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2984375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -948,14 +998,8 @@
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SurveyFacade.java</url>
-          <line>118</line>
-          <properties />
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="56" />
+      <option name="time" value="59" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -964,7 +1008,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/time/LocalDate.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/utils/LocalDateAdapter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/style.css" />
@@ -1002,13 +1045,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_66/src.zip!/java/text/SimpleDateFormat.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/symptomTemplate.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="50" column="55" lean-forward="false" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/navbar.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
@@ -1027,13 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/summaryTemplate.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1093,13 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/SurveyView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1895">
-          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/SymptomView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-76">
@@ -1107,52 +1129,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/LoginFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/OtherSubjectConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/SummaryView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/nextConsultation.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/consultationHistory.xhtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
           <caret line="43" column="81" lean-forward="false" selection-start-line="43" selection-start-column="81" selection-end-line="43" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/SurveyListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="76" column="53" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/NextControlView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="65" column="113" lean-forward="false" selection-start-line="65" selection-start-column="113" selection-end-line="65" selection-end-column="113" />
         </state>
       </provider>
     </entry>
@@ -1171,14 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manifest.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1186,39 +1158,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="43" column="49" lean-forward="false" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/LoginView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/AppointmentFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SurveyFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="27" column="47" lean-forward="false" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/PatientFacade.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="22" column="58" lean-forward="false" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/entities/Appointment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#770#771#0" expanded="false" />
+            <element signature="e#797#798#0" expanded="false" />
+            <element signature="e#837#838#0" expanded="false" />
+            <element signature="e#869#870#0" expanded="false" />
+            <element signature="e#914#915#0" expanded="false" />
+            <element signature="e#952#953#0" expanded="false" />
+            <element signature="e#1017#1018#0" expanded="false" />
+            <element signature="e#1071#1072#0" expanded="false" />
+            <element signature="e#1116#1117#0" expanded="false" />
+            <element signature="e#1154#1155#0" expanded="false" />
+            <element signature="e#1219#1220#0" expanded="false" />
+            <element signature="e#1273#1274#0" expanded="false" />
+            <element signature="e#1338#1339#0" expanded="false" />
+            <element signature="e#1383#1384#0" expanded="false" />
+            <element signature="e#1580#1581#0" expanded="false" />
+            <element signature="e#1613#1614#0" expanded="false" />
+            <element signature="e#1665#1666#0" expanded="false" />
+            <element signature="e#1709#1710#0" expanded="false" />
+            <element signature="e#1745#1746#0" expanded="false" />
+            <element signature="e#1777#1778#0" expanded="false" />
+            <element signature="e#1827#1828#0" expanded="false" />
+            <element signature="e#1869#1870#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/LoginFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="38" column="21" lean-forward="false" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1230,42 +1223,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/entities/Appointment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/LoginFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/OtherSubjectFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="195">
+          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SettingsFacade.java">
+    <entry file="file://$PROJECT_DIR$/src/main/main.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="180">
+          <caret line="12" column="9" lean-forward="false" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="54" lean-forward="true" selection-start-line="57" selection-start-column="54" selection-end-line="57" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/symptomTemplate.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="55" lean-forward="false" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SymptomFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        <state relative-caret-position="180">
+          <caret line="25" column="100" lean-forward="false" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/summaryTemplate.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/nextConsultation.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/AppointmentFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="96" column="27" lean-forward="false" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/SurveyView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-901">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SurveyFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1268">
+          <caret line="119" column="32" lean-forward="false" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/LoginFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-177">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/LoginView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/NextControlView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="65" column="113" lean-forward="false" selection-start-line="65" selection-start-column="113" selection-end-line="65" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/OtherSubjectConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/SummaryView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/beans/SurveyListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="52" column="47" lean-forward="true" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/hib/msapp/RESTClient/SettingsFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
           <folding />
         </state>
       </provider>
