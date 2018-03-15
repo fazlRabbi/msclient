@@ -8,10 +8,9 @@ package no.hib.msapp.beans;
 import no.hib.msapp.RESTClient.SurveyFacade;
 import no.hib.msapp.entities.AppointmentPreperation;
 
-import javax.annotation.ManagedBean;
-import javax.enterprise.context.Dependent;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
-import javax.inject.Named;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -22,27 +21,32 @@ import java.util.List;
 /**
  * @author Leif Arne
  */
-@Named(value = "surveyListView")
-@Dependent
-@ManagedBean
+@ManagedBean(name = "surveyListView", eager = true)
+@RequestScoped
 public class SurveyListView {
 
-    /**
-     * Creates a new instance of SurveyListView
-     */
-    private List<AppointmentPreperation> surveys;
-
-    private SurveyFacade surveyFacade;
-
+    private List<AppointmentPreperation> surveys = new ArrayList<>();
     private List<AppointmentPreperation> oldConsultations = new ArrayList<AppointmentPreperation>();
     private List<AppointmentPreperation> activeConsultations = new ArrayList<AppointmentPreperation>();
+    private String attr;
+    
+    
+    public String getAttr() {
+		return attr;
+	}
 
-    public SurveyListView() {
+	public void setAttr(String attr) {
+		this.attr = attr;
+	}
 
+	public SurveyListView() {
+        onInit();
+    }
+
+    public void onInit() {
         String ssn = (String) FacesContext.getCurrentInstance().getExternalContext().getSessionMap().get("ssn");
-        surveyFacade = new SurveyFacade(ssn);
+        SurveyFacade surveyFacade = new SurveyFacade(ssn);
         splitConsultations(surveyFacade.findAll());
-
     }
 
     public final void splitConsultations(List<AppointmentPreperation> consultations) {

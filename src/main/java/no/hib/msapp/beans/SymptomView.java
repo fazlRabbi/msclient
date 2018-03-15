@@ -20,8 +20,8 @@ import java.io.Serializable;
 @ViewScoped
 public class SymptomView implements Serializable {
 
-
-    private Symptom symptom;
+	private static final long serialVersionUID = 2444006076011790018L;
+	private Symptom symptom;
 
 
     public SymptomView() {

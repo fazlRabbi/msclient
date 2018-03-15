@@ -11,29 +11,26 @@ import no.hib.msapp.entities.AppointmentPreperation;
 import no.hib.msapp.entities.OtherSubject;
 import no.hib.msapp.entities.Symptom;
 
-import javax.annotation.PostConstruct;
-import javax.enterprise.context.Conversation;
-import javax.enterprise.context.ConversationScoped;
-import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 import javax.faces.model.SelectItem;
-import javax.inject.Inject;
-import javax.inject.Named;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 /**
  * @author Leif Arne
  */
-@Named
-@ApplicationScoped
+@RequestScoped
 @ManagedBean
 public class SurveyView implements Serializable {
 
-    private int step = 1;
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5737686794783582673L;
+	private int step = 1;
     private AppointmentPreperation survey;
     private SurveyFacade surveyFacade;
     private final int MAX_STEPS = 8;
@@ -45,7 +42,6 @@ public class SurveyView implements Serializable {
         init();
     }
 
-    @PostConstruct
     public void init() {
         String Guid = (String) FacesContext.getCurrentInstance().
                 getExternalContext().getRequestMap().get("Guid");
