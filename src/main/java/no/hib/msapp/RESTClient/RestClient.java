@@ -11,7 +11,7 @@ public abstract class RestClient {
 	
 	private static final int DEFAULT_RETRY_TIMEOUT = 1000;
 	private static final int DEFAULT_RETRIES = 5;
-	private static final String SERVICE_URL = "http://msservices.eu-gb.mybluemix.net/api/";
+	private static final String SERVICE_URL = "http://localhost:8080/msservice/api/";
 
 	public StringBuilder executeGETRequest(String url) {
 		return executeGETWithRetry(DEFAULT_RETRIES, url);
