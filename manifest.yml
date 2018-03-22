@@ -1,5 +1,5 @@
 applications:
-- path: target/ROOT.war
+- path: target/msclient.war
   memory: 512M
   instances: 1
   domain: eu-gb.mybluemix.net
