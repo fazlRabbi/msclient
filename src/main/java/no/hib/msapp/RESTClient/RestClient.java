@@ -11,6 +11,7 @@ public abstract class RestClient {
 	
 	private static final int DEFAULT_RETRY_TIMEOUT = 1000;
 	private static final int DEFAULT_RETRIES = 5;
+	private static final String SERVICE_URL = "http://msservices.eu-gb.mybluemix.net/api/";
 
 	public StringBuilder executeGETRequest(String url) {
 		return executeGETWithRetry(DEFAULT_RETRIES, url);
@@ -21,6 +22,9 @@ public abstract class RestClient {
 	}
 	
 	private void executePUTWithRetry(int defaultRetries, String url, String payload) {
+
+		url = SERVICE_URL + url;
+
 		if (defaultRetries == 0) {
 			throw new RuntimeException("Could not connecto to " + url + " after several retries");
 		}
@@ -55,6 +59,9 @@ public abstract class RestClient {
 	}
 
 	private StringBuilder executeGETWithRetry(int numberRetries, String url) {
+		
+		url = SERVICE_URL + url;
+		
 		if (numberRetries == 0) {
 			throw new RuntimeException("Could not connect to " + url + " after several retries");
 		}

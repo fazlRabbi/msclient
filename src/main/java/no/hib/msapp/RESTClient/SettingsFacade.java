@@ -15,7 +15,7 @@ import java.lang.reflect.Type;
  * @author Leif Arne
  */
 public class SettingsFacade extends RestClient {
-    private final String MAX_WEEKS = "http://msservices.eu-gb.mybluemix.net/api/settings/preperationStart";
+    private final String MAX_WEEKS = "settings/preperationStart";
 
     public SettingsFacade() {
     }

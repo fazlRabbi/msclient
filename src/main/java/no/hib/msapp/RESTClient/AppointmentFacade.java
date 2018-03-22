@@ -17,7 +17,7 @@ import no.hib.msapp.entities.Patient;
  */
 public class AppointmentFacade extends RestClient {
 
-    private final String ALL_SURVEYS = "http://msservices.eu-gb.mybluemix.net/api/preperation";
+    private final String ALL_SURVEYS = "preperation";
 
     public AppointmentFacade(Patient p) {
     }

@@ -9,7 +9,7 @@ import java.net.URL;
 
 public class LoginFacade {
 
-    private final String Url = "http://msservices.eu-gb.mybluemix.net/api/login";
+    private final String Url = "login";
 
     public LoginFacade() {
     }

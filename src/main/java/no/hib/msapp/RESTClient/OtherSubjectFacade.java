@@ -10,7 +10,7 @@ import java.util.List;
 
 
 public class OtherSubjectFacade extends RestClient {
-    private final String ALL_SUBJECTS = "http://msservices.eu-gb.mybluemix.net/api/settings/othersubjects";
+    private final String ALL_SUBJECTS = "settings/othersubjects";
 
     public OtherSubjectFacade() {
     }

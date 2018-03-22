@@ -20,7 +20,7 @@ import java.util.List;
  */
 public class SurveyFacade extends RestClient {
 
-	private final String ALL_SURVEYS = "http://msservices.eu-gb.mybluemix.net/api/preperation";
+	private final String ALL_SURVEYS = "preperation";
 	private String ssn;
 
 	public SurveyFacade(String Ssn) {

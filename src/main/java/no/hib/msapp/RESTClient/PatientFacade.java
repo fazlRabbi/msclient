@@ -14,7 +14,7 @@ import no.hib.msapp.entities.Patient;
  */
 public class PatientFacade extends RestClient {
 
-    private final String ALL_PATIENTS = "http://msservices.eu-gb.mybluemix.net/api/patients";
+    private final String ALL_PATIENTS = "patients";
 
     public PatientFacade() {
     }

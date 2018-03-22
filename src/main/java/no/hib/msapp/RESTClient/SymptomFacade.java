@@ -19,7 +19,7 @@ import java.util.List;
  * @author Leif Arne
  */
 public class SymptomFacade extends RestClient {
-	private final String ALL_SYMPTOMS = "http://msservices.eu-gb.mybluemix.net/api/settings/symptoms";
+	private final String ALL_SYMPTOMS = "settings/symptoms";
 
 	public SymptomFacade() {
 	}
